@@ -2,19 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Fundraiser</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        .donate-button { margin-top: 20px; }
+        /* Basic CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .fundraiser-info {
+            margin-bottom: 20px;
+        }
+        .fundraiser-info h2 {
+            color: #e74c3c;
+        }
+        .donate-button {
+            margin-top: 20px;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #2c3e50;
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <h1>My Fundraiser for [Your Cause]</h1>
-    <p>We’re raising funds to [describe your cause]. Every little bit helps!</p>
-    <div class="donate-button">
-        <!-- PayPal button will go here -->
+    <!-- Header -->
+    <header>
+        <h1>My Fundraiser</h1>
+        <p>Help Us Make a Difference</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="fundraiser-info">
+            <h2>About Our Cause</h2>
+            <p>
+                Welcome to our fundraiser! We are raising money to [insert your cause here, e.g., support local animal shelters, fund medical research, etc.]. 
+                Every donation brings us closer to our goal of [specific goal, e.g., $1,000]. Thank you for your support!
+            </p>
+        </div>
+
+        <!-- PayPal Donate Button Placeholder -->
+        <div class="donate-button">
+            <p>Ready to contribute? Click below to donate!</p>
+            <!-- Replace this with your actual PayPal button code -->
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+            </form>
+        </div>
     </div>
-    <div class="donate-button">
-</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Fundraiser. All rights reserved.</p>
+    </footer>
 </body>
 </html>
